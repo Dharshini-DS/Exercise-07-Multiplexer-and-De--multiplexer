@@ -67,18 +67,14 @@ Run the program and choose RTL viewer to get RTL realization.
 
 
 ### PROGRAM 
-
+```
 Program for flipflops  and verify its truth table in quartus using Verilog programming.
-
-
-Developed by: Manoj M
-
-
-RegisterNumber: 212221240027
-
+Developed by: Dharshini DS
+RegisterNumber: 212221230022
+```
 
 ### MULTIPLEXER:
-~~~
+```
 module mux(i0,i1,i2,i3,s0,s1,y);
 input i0,i1,i2,i3,s0,s1;
 output y;
@@ -91,11 +87,9 @@ and(r,s0,s1c,i2);
 and(s,s0,s1,i3);
 or(y,p,q,r,s);
 endmodule  
-~~~
-
-
+```
 ### DEMULTIPLEXER: 
-~~~
+```
 module mux(y0,y1,y2,y3,s0,s1,i);
 input s0,s1,i;
 output y0,y1,y2,y3;
@@ -107,66 +101,29 @@ and(y1,i,s0c,s1);
 and(y2,i,s0,s1c);
 and(y3,i,s0,s1);
 endmodule
-~~~
+```
 
-### RTL LOGIC :
-
-
-### MULTIPLEXER:
-![1](https://user-images.githubusercontent.com/94588708/201332494-e53e0e5c-9c19-46cf-952b-c7b0558a59cc.png)
-
-
-### DE-MULTIPLEXER:
-![2](https://user-images.githubusercontent.com/94588708/201332511-83f311a4-95ec-46f4-8924-932fd260cd15.png)
-
-
-
-
-
-### TIMING DIGRAMS  :
+## RTL LOGIC :
 
 ### MULTIPLEXER:
 
-WHEN I0=1
-![3](https://user-images.githubusercontent.com/94588708/201332551-ac782388-b718-453d-8543-df5f58881153.png)
-
-
-
-WHEN I1=1
-![4](https://user-images.githubusercontent.com/94588708/201332566-cc7844a0-f065-451c-a25a-5d8627d081da.png)
-
-
-WHEN I2=1
-![5](https://user-images.githubusercontent.com/94588708/201332582-79292ed5-84df-4c6b-9b2e-406f468887d1.png)
-
-
-WHEN I3=1
-
-
-![6](https://user-images.githubusercontent.com/94588708/201332607-57b99130-b367-45f4-91f0-bd2abc348147.png)
-
 ### DE-MULTIPLEXER:
 
-![7](https://user-images.githubusercontent.com/94588708/201332641-c526e20a-9f12-405b-97df-d507fac5480e.png)
 
-
-
-
-### TRUTH TABLE 
+## TIMING DIGRAMS  :
 
 ### MULTIPLEXER:
 
 
-![8](https://user-images.githubusercontent.com/94588708/201332723-d6f1fac1-7cc7-43c2-9596-8a721330ee85.png)
-
 ### DE-MULTIPLEXER:
 
-![9](https://user-images.githubusercontent.com/94588708/201332745-2b57c4fe-b893-4728-83d0-83af8640ce2b.png)
+
+## TRUTH TABLE 
+
+### MULTIPLEXER:
 
 
-
-
-
+### DE-MULTIPLEXER:
 
 
 ### RESULTS 
