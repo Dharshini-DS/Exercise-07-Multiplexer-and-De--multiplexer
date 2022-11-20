@@ -106,25 +106,26 @@ endmodule
 ## RTL LOGIC :
 
 ### MULTIPLEXER:
+![1](./1.png)
 
 ### DE-MULTIPLEXER:
-
+![2](./2.png)
 
 ## TIMING DIGRAMS  :
 
 ### MULTIPLEXER:
-
+![3](./3.png)
 
 ### DE-MULTIPLEXER:
-
+![4](./4.png)
 
 ## TRUTH TABLE 
 
 ### MULTIPLEXER:
-
+![5](./5.png)
 
 ### DE-MULTIPLEXER:
-
+![6](./6.png)
 
 ### RESULTS 
 4 X1 multiplexer and 1X4 de multiplexer has been implemented using verilog and outputs are validated.
