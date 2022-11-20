@@ -1,8 +1,8 @@
 # Exercise-07-Multiplexer-and-De-multiplexer
-### AIM: To implement 4 X1 multiplexer and 1X4 de multiplexer using verilog and validate its outputs
-### HARDWARE REQUIRED:  – PC, Cyclone II , USB flasher
-### SOFTWARE REQUIRED:   Quartus prime
-### THEORY 
+## AIM: To implement 4 X1 multiplexer and 1X4 de multiplexer using verilog and validate its outputs
+## HARDWARE REQUIRED:  – PC, Cyclone II , USB flasher
+## SOFTWARE REQUIRED:   Quartus prime
+## THEORY 
 
 ## What are Multiplexer and Demultiplexer?
 In-network transmission, both the multiplexer and demultiplexer are combinational circuits. A multiplexer selects an input from several inputs then it is transmitted in the form of a single line. An alternative name of the multiplexer is MUX or data selector. A demultiplexer uses one input signal and generates many. So it is known as Demux or data distributor.
@@ -46,7 +46,7 @@ If the control input changes to AB = 10, then all the gates are restricted excep
 
  
  
-### Procedure
+## Procedure
 Step 1:
 Open Quartus II and select new project . Open new file at the verilog.
 
@@ -72,8 +72,7 @@ Program for flipflops  and verify its truth table in quartus using Verilog progr
 Developed by: Dharshini DS
 RegisterNumber: 212221230022
 ```
-
-### MULTIPLEXER:
+## MULTIPLEXER:
 ```
 module mux(i0,i1,i2,i3,s0,s1,y);
 input i0,i1,i2,i3,s0,s1;
@@ -86,9 +85,18 @@ and(q,s0c,s1,i1);
 and(r,s0,s1c,i2);
 and(s,s0,s1,i3);
 or(y,p,q,r,s);
-endmodule  
+endmodule    
 ```
-### DEMULTIPLEXER: 
+## RTL LOGIC :
+![1](./1.png)
+
+## TIMING DIGRAMS  :
+![3](./3.png)
+
+## TRUTH TABLE: 
+![5](./5.png)
+
+## DEMULTIPLEXER: 
 ```
 module mux(y0,y1,y2,y3,s0,s1,i);
 input s0,s1,i;
@@ -102,30 +110,14 @@ and(y2,i,s0,s1c);
 and(y3,i,s0,s1);
 endmodule
 ```
-
 ## RTL LOGIC :
-
-### MULTIPLEXER:
-![1](./1.png)
-
-### DE-MULTIPLEXER:
 ![2](./2.png)
 
-## TIMING DIGRAMS  :
-
-### MULTIPLEXER:
-![3](./3.png)
-
-### DE-MULTIPLEXER:
+## TRUTH TABLE
 ![4](./4.png)
 
-## TRUTH TABLE 
-
-### MULTIPLEXER:
-![5](./5.png)
-
-### DE-MULTIPLEXER:
+## TRUTH TABLE:
 ![6](./6.png)
 
-### RESULTS 
+## RESULTS 
 4 X1 multiplexer and 1X4 de multiplexer has been implemented using verilog and outputs are validated.
